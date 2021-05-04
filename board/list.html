@@ -5,7 +5,18 @@
         <title>세미프로젝트V1-list</title>
         <link rel="stylesheet" href="/css/base.css">
     </head>
-
+    <style>
+        #board { width: 75%; margin: 0 auto;
+                 border-collapse: collapse;
+                 table-layout: fixed; }
+        th,td {border: 1px solid black; text-align: center;
+               padding: 10px}
+        td:nth-child(2) { white-space: nowrap; overflow: hidden;
+                          text-overflow:ellipsis}
+        .newbtn { text-align: right; border: none;}
+        .tbnav { border: none;}
+        .cpage { font-weight: bold; color: red; font-size: 35px}
+    </style>
     <body>
         <div id="wrap">
         <header>
@@ -18,12 +29,27 @@
                 <li><a href="/login.html">로그인</a></li>
                 <li><a href="#">게시판</a></li>
                 <li><a href="/myinfo.html">회원정보</a></li>
+
             </ul>
         </nav>
         <div id="container">
-                <table cellpadding="10" cellspacing="0" border="1">
+                <table id="board" cellspacing="0" border="1">
+                    <colgroup><!-- 테이블 컬럼 스타일 정의 -->
+                        <col style="width: 10%">
+                        <col style="">
+                        <col style="width: 15%">
+                        <col style="width: 15%">
+                        <col style="width: 10%">
+                    </colgroup>
+                <hr>
                 <h2>게시판</h2>
                 <thead>
+                    <tr>
+                        <td colspan="5" class="newbtn">
+                            <button>글쓰기</button>
+                        </td>
+                    </tr>
+
                     <tr>
                         <th>번호</th>
                         <th>제목</th>
@@ -121,7 +147,11 @@
                         <td>7777</td>
                     </tr>
                 </tbody>
-
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="tbnav"><span><span class="cpage">1</span> 2 3 4 5 6 7 8 9 10 </span></td>
+                    </tr>
+                </tfoot>
 
                 </table>
         </div>
