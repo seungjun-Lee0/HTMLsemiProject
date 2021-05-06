@@ -1,0 +1,55 @@
+        #wrap { width: 1150px; margin: 0 auto;
+                border: 3px solid black}
+
+        body { /*border: 3px solid black;*/ }
+        header, main, footer, nav, #main {/* border: 1px solid red;*/}
+        header { height: 100px;}
+        header h1 {background: #dcdcdc;
+                   padding: 20px 50px; margin: 10px 10px 10px 25px;
+                   width: 70px; float: left;}
+        header p { float: left; margin-top: 65px}
+        header ul { float: right; margin-right: 30px}
+        header li { float: left; padding: 3px}
+
+        nav { height: 35px; clear: both;
+              padding-left: 20px; background: #dcdcdc;}
+        nav input, select{ border: 3px solid grey}
+        nav input { margin-top: 5px; width: 325px}
+        nav select { width: 150px; font-size: 15px;}
+        nav button { border: none; background: grey; border-radius: 8px;
+                     color: white; width:125px;  height: 23px}
+
+        /*main-aside*/
+        aside { width: 275px; float: left}
+        aside ul { margin: 10px 10px 20px 20px;
+                   border: 3px solid black}
+        aside li { border-bottom: 1px solid black;
+                   padding: 7px 14px; font-weight: bold;
+                   font-size: 18px }
+        aside li:last-child{ border-bottom: none;}
+
+        /*main-banner*/
+        #banner { border: 3px solid black; height: 245px; width: 845px;               float: right; margin: 10px 20px 20px 0px;}
+        #banner h3 { text-align: center; margin: 110px;}
+        #banner ul { float: right; margin: -50px 20px 0px 10px}
+        #banner li { float: left; background: #dfdfdf;
+                     margin: 0px 5px 0px 5px; padding: 5px;
+                     font-weight: bold; text-align: center;
+                     width: 20px}
+
+        /*main-prodlist*/
+        section:nth-child(2) { clear: both; }
+        #prodlist h3 { margin-left: 25px;}
+        #prodlist ul { margin: 20px 0 30px 50px;
+                       height: 150px; }
+        #prodlist li {float:left; margin-right: 55px;}
+        #prodlist div {border: 3px solid #dfdfdf}
+        #prodlist img {width: 120px; height: 120px;}
+        #prodlist p {text-align: center;}
+
+        /*main-*/
+        footer {clear: both; border-top: 3px solid black;
+                height: 220px;}
+        footer ul { float: left; margin-right: 80px; margin-left: 20px;
+                    margin-top: 10px}
+        footer ul: first-child { margin-left: 10px; }
